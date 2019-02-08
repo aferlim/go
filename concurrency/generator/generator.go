@@ -27,7 +27,7 @@ func titulo(urls ...string) <-chan string {
 }
 
 func main() {
-	t1 := titulo("https://www.cod3r.com.br", "https://www.google.com")
+	t1 := titulo("https://www.nasa.gov", "https://www.google.com")
 	t2 := titulo("https://www.grupoltm.com.br", "https://www.youtube.com")
 
 	fmt.Println("Primeiros: ", <-t1, "|", <-t2)
