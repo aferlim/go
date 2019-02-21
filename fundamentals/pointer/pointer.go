@@ -9,10 +9,12 @@ func main() {
 
 	p = &i
 	*p++
+	i += i
 	i++
 
 	// GO haven't arithimetic pointer
 	//p++ // wrong
 
-	fmt.Println(p, *p, i, &i)
+	fmt.Println(p, *p, i, &i, &p)
+	//fmt.Println(i, &i)
 }

@@ -5,6 +5,7 @@ import (
 	"fmt"
 )
 
+// Product comment
 type Product struct {
 	ID    int      `json:"id"`
 	Name  string   `json:"name"`
@@ -20,9 +21,9 @@ func main() {
 
 	fmt.Println(string(piJSON))
 
-	var p2 Product
+	var p2 []Product
 
-	jsonString := `{"id":1,"name":"Caneta","price":9.9,"tags":["Papelaria","Importado"]}`
+	jsonString := `[{"id":1,"name":"Caneta","price":9.9,"tags":["Papelaria","Importado"]}, {"id":2,"name":"Caneta 2","price":1.9,"tags":["Papelaria","Importado"]}]`
 
 	json.Unmarshal([]byte(jsonString), &p2)
 	fmt.Println(p2)
