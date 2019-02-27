@@ -21,5 +21,5 @@ func main() {
 	// fmt.Println("Fim!")
 
 	go speak("Maria", "Entendi!!!", 10)
-	speak("João", "Parabéns!", 5)
+	//speak("João", "Parabéns!", 5)
 }

@@ -21,6 +21,6 @@ func main() {
 	fmt.Println(<-c) // operação bloqueante
 	fmt.Println("foi lido")
 
-	fmt.Println(<-c) //deadlock
+	//fmt.Println(<-c) //deadlock
 
 }

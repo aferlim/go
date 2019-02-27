@@ -34,6 +34,8 @@ func main() {
 	// go primos(cap(c), c)
 	go primos(60, c)
 
+	fmt.Println("Pode fazer assíncorno, gerenciando a concorrência")
+
 	for primo := range c {
 		fmt.Printf("%d ", primo)
 	}

@@ -18,4 +18,7 @@ func main() {
 	go routine(ch)
 
 	fmt.Println(<-ch)
+	fmt.Println(<-ch)
+	fmt.Println(<-ch)
+	fmt.Println(<-ch)
 }
