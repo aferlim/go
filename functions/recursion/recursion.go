@@ -11,17 +11,18 @@ func fatorial(n int) (int, error) {
 		return 1, nil
 	default:
 		previousFatorial, _ := fatorial(n - 1)
-		return n * previousFatorial, nil
+		fmt.Println(n - 1)
+		return previousFatorial, nil
 	}
 }
 
 func main() {
-	result, _ := fatorial(5)
+	result, _ := fatorial(50)
 	fmt.Println(result)
 
-	_, err := fatorial(-4)
+	// _, err := fatorial(-4)
 
-	if err != nil {
-		fmt.Println(err)
-	}
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
 }
